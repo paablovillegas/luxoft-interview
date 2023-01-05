@@ -1,8 +1,8 @@
 package com.pferruzco.interview.code
 
-
 /*
-Given a phrase, we want it to be encrypted with a rotational cipher n by shifting each letter n times.
+Given a phrase, we want it to be encrypted with a caesar
+rotational cipher n by shifting each letter n times.
     Input = {
         phrase = “Hello World”
         n = 4
