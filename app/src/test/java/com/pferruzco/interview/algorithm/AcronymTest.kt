@@ -1,5 +1,7 @@
 package com.pferruzco.interview.algorithm
 
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 internal class AcronymTest {
@@ -9,7 +11,7 @@ internal class AcronymTest {
         val title = ""
         val output = getAcronym(title)
 
-        assert(output.isEmpty())
+        assertTrue(output.isEmpty())
     }
 
     @Test
@@ -18,9 +20,9 @@ internal class AcronymTest {
         val output = getAcronym(title)
         val expectedOutput = "T"
 
-        assert(output.isNotEmpty())
-        assert(output.length == expectedOutput.length)
-        assert(output == expectedOutput)
+        assertTrue(output.isNotEmpty())
+        assertEquals(output.length, expectedOutput.length)
+        assertEquals(output, expectedOutput)
     }
 
     @Test
@@ -29,8 +31,8 @@ internal class AcronymTest {
         val output = getAcronym(title)
         val expectedOutput = "TLA"
 
-        assert(output.isNotEmpty())
-        assert(output.length == expectedOutput.length)
-        assert(output == expectedOutput)
+        assertTrue(output.isNotEmpty())
+        assertEquals(output.length, expectedOutput.length)
+        assertEquals(output, expectedOutput)
     }
 }

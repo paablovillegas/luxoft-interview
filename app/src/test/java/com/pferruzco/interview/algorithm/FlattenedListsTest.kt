@@ -1,5 +1,8 @@
 package com.pferruzco.interview.algorithm
 
+import org.junit.Assert.assertArrayEquals
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 internal class FlattenedListsTest {
@@ -9,7 +12,7 @@ internal class FlattenedListsTest {
         val input: List<List<Int?>> = listOf()
         val output = flattenedList(input)
 
-        assert(output.isEmpty())
+        assertTrue(output.isEmpty())
     }
 
     @Test
@@ -20,7 +23,7 @@ internal class FlattenedListsTest {
         )
         val output = flattenedList(input)
 
-        assert(output.isEmpty())
+        assertTrue(output.isEmpty())
     }
 
     @Test
@@ -33,9 +36,9 @@ internal class FlattenedListsTest {
         val expectedResult = intArrayOf(1, 2, 3, 4, 5, 6)
         val output = flattenedList(input)
 
-        assert(output.isNotEmpty())
-        assert(output.size == expectedResult.size)
-        assert(output.contentEquals(expectedResult))
+        assertTrue(output.isNotEmpty())
+        assertEquals(output.size, expectedResult.size)
+        assertArrayEquals(output, expectedResult)
     }
 
     @Test
@@ -49,8 +52,8 @@ internal class FlattenedListsTest {
         val expectedResult = intArrayOf(1, 2, 3, 4, 5, 6)
         val output = flattenedList(input)
 
-        assert(output.isNotEmpty())
-        assert(output.size == 6)
-        assert(output.contentEquals(expectedResult))
+        assertTrue(output.isNotEmpty())
+        assertEquals(output.size, 6)
+        assertArrayEquals(output, expectedResult)
     }
 }

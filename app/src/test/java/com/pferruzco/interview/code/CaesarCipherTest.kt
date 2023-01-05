@@ -1,5 +1,7 @@
 package com.pferruzco.interview.code
 
+import org.junit.Assert.assertEquals
+import org.junit.Assert.assertTrue
 import org.junit.Test
 
 internal class CaesarCipherTest {
@@ -10,7 +12,7 @@ internal class CaesarCipherTest {
         val n = 4
         val output = caesarCipher(message, n)
 
-        assert(output.isEmpty())
+        assertTrue(output.isEmpty())
     }
 
     @Test
@@ -19,11 +21,9 @@ internal class CaesarCipherTest {
         val n = 0
         val output = caesarCipher(message, n)
 
-        assert(output.isNotEmpty())
-        assert(output.length == message.length)
-        for (i in output.indices) {
-            assert(output[i] == message[i])
-        }
+        assertTrue(output.isNotEmpty())
+        assertEquals(output.length, message.length)
+        assertEquals(output, message)
     }
 
     @Test
@@ -33,11 +33,9 @@ internal class CaesarCipherTest {
         val output = caesarCipher(message, n)
         val expectedOutput = "Lipps"
 
-        assert(output.isNotEmpty())
-        assert(output.length == expectedOutput.length)
-        for(i in expectedOutput.indices) {
-            assert(output[i] == expectedOutput[i])
-        }
+        assertTrue(output.isNotEmpty())
+        assertEquals(output.length, message.length)
+        assertEquals(output, expectedOutput)
     }
 
     @Test
@@ -47,11 +45,9 @@ internal class CaesarCipherTest {
         val output = caesarCipher(message, n)
         val expectedOutput = "Lipps"
 
-        assert(output.isNotEmpty())
-        assert(output.length == expectedOutput.length)
-        for(i in expectedOutput.indices) {
-            assert(output[i] == expectedOutput[i])
-        }
+        assertTrue(output.isNotEmpty())
+        assertEquals(output.length, message.length)
+        assertEquals(output, expectedOutput)
     }
 
     @Test
@@ -61,11 +57,9 @@ internal class CaesarCipherTest {
         val output = caesarCipher(message, n)
         val expectedOutput = "Lipps Asvph"
 
-        assert(output.isNotEmpty())
-        assert(output.length == expectedOutput.length)
-        for(i in expectedOutput.indices) {
-            assert(output[i] == expectedOutput[i])
-        }
+        assertTrue(output.isNotEmpty())
+        assertEquals(output.length, message.length)
+        assertEquals(output, expectedOutput)
     }
 
 }
