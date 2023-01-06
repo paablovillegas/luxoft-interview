@@ -1,4 +1,4 @@
-package com.pferruzco.interview.algorithm
+package com.pferruzco.interview.two
 
 /*
 Given a phrase convert it into its acronym

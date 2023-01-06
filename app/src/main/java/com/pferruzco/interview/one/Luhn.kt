@@ -1,4 +1,4 @@
-package com.pferruzco.interview.algorithm
+package com.pferruzco.interview.one
 
 /*
 The Luhn algorithm is a simple checksum formula used to validate a variety of identification numbers.

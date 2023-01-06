@@ -1,4 +1,4 @@
-package com.pferruzco.interview.code
+package com.pferruzco.interview.two
 
 import org.junit.Assert.assertEquals
 import org.junit.Test

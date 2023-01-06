@@ -1,4 +1,4 @@
-package com.pferruzco.interview.algorithm
+package com.pferruzco.interview.three
 
 import org.junit.Assert.assertArrayEquals
 import org.junit.Assert.assertEquals

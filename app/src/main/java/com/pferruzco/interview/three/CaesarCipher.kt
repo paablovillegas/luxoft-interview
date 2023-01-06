@@ -1,4 +1,4 @@
-package com.pferruzco.interview.code
+package com.pferruzco.interview.three
 
 /*
 Given a phrase, we want it to be encrypted with a caesar
